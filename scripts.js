@@ -15,7 +15,7 @@ const pieces = document.querySelectorAll(".grid-item")
 
 pieces.forEach((piece) => {
     piece.addEventListener('mouseover', function(e){
-        piece.classList.add(".hovered")
+        e.classList.add(".hovered")
     });
 });
 
