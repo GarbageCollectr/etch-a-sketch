@@ -1,4 +1,4 @@
-const container = document.getElementById("container")
+const container = document.getElementById('container')
 
 
 function makeRows(rows, cols){
@@ -7,17 +7,19 @@ function makeRows(rows, cols){
     for ( let c = 0; c < (rows * cols); c++){
         let cell = document.createElement('div');
         cell.innerText = (c+1);
-        container.appendChild(cell).className= "grid-item"
+        container.appendChild(cell).className= 'grid'
     }
 }
 
-const pieces = document.querySelectorAll(".grid-item")
+makeRows(50,50);
+
+pieces = document.querySelectorAll('.grid')
 
 pieces.forEach((piece) => {
     piece.addEventListener('mouseover', function(e){
-        e.classList.add(".hovered")
+        piece.classList.add('hovered')
     });
 });
 
 
-makeRows(16,16);
+
