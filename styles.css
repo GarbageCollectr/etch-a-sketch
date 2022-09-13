@@ -2,14 +2,13 @@
 
 #container{
     display: grid;
-    grid-gap: 1em;
+    grid-gap: .05em;
     grid-template-rows: repeat(var(--grid-rows),1fr);
     grid-template-columns: repeat(var(--grid-cols),1fr);
 }
 
 .grid{
-    padding: 1em;
-    text-align: center;
+    padding: 8px;
     border: 1px solid black;
 }
 
